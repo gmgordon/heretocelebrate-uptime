@@ -8,9 +8,13 @@ sites:
     url: https://heretocelebrate.com/api/health
     expectedStatusCodes:
       - 200
+  # Temporary: a page that doesn't exist, to prove alerts arrive. Remove after the test.
+  - name: Alert test
+    url: https://heretocelebrate.com/api/uptime-alert-test
+    expectedStatusCodes:
+      - 200
 
 assignees:
   - gmgordon
 
-# No public status website. Monitoring and issues only.
-skipPoweredByReadme: true
+skipDeleteIssues: true
